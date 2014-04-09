@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<html lang="en">
+	<head>
+		<title>Working Bees</title>
+		<meta  charset="utf-8" /> 
+		<link rel="stylesheet" href="reset.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+			<link href="img/bee.ico" type="image/png" rel="icon" />
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="placeholder.js"></script>
+		 <script type="text/javascript" src="jquery.localscroll.js"></script>
+		 <script type="text/javascript" src="jquery.scrollto.js"></script>
+		
+		<script >
+			$(function(){
+			$("#name").textPlaceholder();
+			});
+			$(function(){
+			$("#email").textPlaceholder();
+			});
+			$(function(){
+			$("#message").textPlaceholder();
+			});
+			$(function(){
+			$("#author").textPlaceholder();
+			});
+			$(function(){
+			$("#mail").textPlaceholder();
+			});
+			$(function(){
+			$("#comment").textPlaceholder();
+			});
+		</script>  
+			<!-- change active menu  -->
+		<script>
+			$(document).ready(function(){
+			$('#navigation ul li a').click(function() {
+			$('#navigation ul li a').removeClass("active"); 
+			$(this).addClass("active"); 
+			});
+			});
+		</script>
+		<!-- end of change active menu  -->
+		
+				<script>
+		$(function($) {
+		 $.localScroll({
+		  duration: 1000,
+		  hash: false });
+		 });
+		</script>
+	</head>
+	<body>
+		<span id="top"></span>
+		<div id="top_container">
+			<div id="top_menu">
+								<div id="logo_right">
+					<img src="img/bee2.png" alt="logo" usemap="#karta" />
+				</div>
+				<div id="logo_left">
+				</div>
+				<div id="navigation">
+					<ul>
+						<li><a href="index.html#top" >Home</a></li>
+						<li><a href="index.html#info_scroll" >Info</a></li>
+						<li><a href="index.html#post_scroll" >Posts</a></li>
+						<li><a href="#contact" >Contact</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div id="container">
+						<div class="head_info">
+				<h1>The very important phrase that you should read</h1>
+				<h6>And not very important slogan that you won't read</h6>
+
+			</div>
+			<div id="post_pos">
+				<div class="post">
+					<h1>Why do you have depression? </h1>
+					<div class="post_meta">
+						<span class="post_bord" >By piupiupiu</span>
+						<span class="post_bord">September 25, 2013</span>
+						<span>0 comments</span>
+					</div>
+					<div class="post_content">
+						<img src="img/post_pic2.png" alt="post pic" />
+						<p>Depression can lead to emotional and physical problems. Typically, people with depression find it hard
+						to go about their day-to-day activities, and may also feel that life is not worth living.
+						Feeling sad, or what we may call "depressed", happens to all of us. The sensation usually passes after a while.
+						However, people with a depressive disorder - clinical depression - find that their state interferes with daily life.
+						Their normal functioning is undermined to such an extent that both they and those who care about them are affected 
+						by it. Depression is not uniform. Signs and symptoms may be experienced by some sufferers and not by others.
+						How severe the symptoms are, and how long they last depends on the individual person and his illness.
+						Below is a list of the most common symptoms. Major depressive disorder is also known as major depression. 
+						The patient suffers from a combination of symptoms that undermine his ability to sleep, study, work, eat,
+						and enjoy activities he used to find pleasurable. Experts say that major depressive disorder can be very disabling,
+						preventing the patient from functioning normally. Some people experience only one episode, while others have recurrences.</p>
+					</div>
+					                                                                        <div class="post_end">
+					</div>
+				</div>
+									<div class="nav_side">
+				<h3>Categories</h3>
+				<img src="img/categories.png" alt="categories" />
+				<ul>
+					<li><a  href="category_one.html">Category one(1)</a></li>
+					<li><a href="category_two.html">Category two(1)</a></li>
+					<li><a href="category_three.html">Category three(1)</a></li>
+					<li><a href="category_four.html">Category four(0)</a></li>
+					<li><a href="category_five.html">Category five(0)</a></li>
+				</ul>	
+				
+			</div>
+			<div class="nav_side">
+				<h3>Popular posts</h3>
+				<img src="img/popular.png" alt="popular" />
+				<ul>
+					<li><a href="how_to_be_a_hero.html">How to be a hero?</a></li>
+					<li><a href="why_do_you_have_depression.html">Why do you have depression?</a></li>
+					<li><a href="why_bad_clowns_kill_people.html">Why bad clowns kill people?</a></li>
+				</ul>
+			</div>
+				
+				<div id="comment_block">
+<form>
+					<h2>Add a comment:</h2>
+					<input id="author" type="text" value="" name="author" placeholder="Name *" size="18" />
+					<input id="mail" type="text" value="" name="mail" placeholder="Email *" size="18" />
+					<textarea id="comment" cols="70" rows="8" placeholder="Message" name="comment"  ></textarea>
+					<input id="add" type="submit" value="Add comment" />
+</form>
+				</div>
+				
+				
+			</div>
+			
+			<div id="contact">
+				<div id="contact_wrap">
+					<img id="g_left" src="img/gear_left.png" alt="gear pic" />
+					<img id="g_right" src="img/gear_right.png" alt="gear pic" />
+				</div>
+				<div id="feedback">
+				<form>
+						<input id="name" type="text" value="" name="name" placeholder="Name" size="18" />
+					<input id="email" type="text" value="" name="email" placeholder="Email" size="18" />
+					<textarea id="message" cols="42" rows="5" placeholder="Message" name="message"  ></textarea>
+					<input id="submit" type="submit" value="Send Mail" />
+				</form>
+				</div>
+			</div>
+			<div class="foot">
+				<p>Copyright © piupiupiu. All Rights Reserved</p>
+				<p>design/codding by piupiupiu</p>
+				<p>logo by revenholm</p>
+			</div>
+		</div>
+
+	</body>
+</html>

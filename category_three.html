@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<html lang="en">
+	<head>
+		<title>Working Bees</title>
+		<meta  charset="utf-8" /> 
+		<link rel="stylesheet" href="reset.css" type="text/css" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+			<link href="img/bee.ico" type="image/png" rel="icon" />
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="placeholder.js"></script>
+		 <script type="text/javascript" src="jquery.localscroll.js"></script>
+		 <script type="text/javascript" src="jquery.scrollto.js"></script>
+		
+		<script >
+			$(function(){
+			$("#name").textPlaceholder();
+			});
+			$(function(){
+			$("#email").textPlaceholder();
+			});
+			$(function(){
+			$("#message").textPlaceholder();
+			});
+		</script>  
+			<!-- change active menu  -->
+		<script>
+			$(document).ready(function(){
+			$('#navigation ul li a').click(function() {
+			$('#navigation ul li a').removeClass("active"); 
+			$(this).addClass("active"); 
+			});
+			});
+		</script>
+		<!-- end of change active menu  -->
+		
+		<script>
+		$(function($) {
+		 $.localScroll({
+		  duration: 1000,
+		  hash: false });
+		 });
+		</script>
+	</head>
+	<body>
+		<span id="top"></span>
+		<div id="top_container">
+			<div id="top_menu">
+			     <div id="logo_right">
+				<img src="img/bee2.png" alt="logo" />
+				</div>
+				<div id="logo_left">
+				</div>
+				<div id="navigation">
+					<ul>
+						<li><a href="index.html#top" >Home</a></li>
+						<li><a href="index.html#info_scroll" >Info</a></li>
+						<li><a href="index.html#post_scroll" >Posts</a></li>
+						<li><a href="#contact" >Contact</a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div id="container">
+						<div class="head_info">
+				<h1>The very important phrase that you should read</h1>
+				<h6>And not very important slogan that you won't read</h6>
+
+			</div>
+			<h1 class="category_title">Category three(1):</h1>
+			<div id="post_pos">
+				<div class="post">
+					<h1>Why bad clowns kill people?</h1>
+					<div class="post_meta">
+						<span class="post_bord" >By piupiupiu</span>
+						<span class="post_bord">September 27, 2013</span>
+						<span>0 comments</span>
+					</div>
+					<div class="post_content">
+						<img src="img/post_pic3.png" alt="post pic" />
+						<p>Google can't answer  this question...Do you?</p>
+						<a class="post_full" href="why_bad_clowns_kill_people.html" ><span data-title="Read more">Read more</span></a>		
+					</div>
+					                                                                        <div class="post_end">
+					</div>
+				</div>
+			</div>
+			<div id="aside">	
+									<div class="nav_side">
+				<h3>Categories</h3>
+				<img src="img/categories.png" alt="categories" />
+				<ul>
+					<li><a  href="category_one.html">Category one(1)</a></li>
+					<li><a href="category_two.html">Category two(1)</a></li>
+					<li><a href="category_three.html">Category three(1)</a></li>
+					<li><a href="category_four.html">Category four(0)</a></li>
+					<li><a href="category_five.html">Category five(0)</a></li>
+				</ul>	
+				
+			</div>
+			<div class="nav_side">
+				<h3>Popular posts</h3>
+				<img src="img/popular.png" alt="popular" />
+				<ul>
+					<li><a href="how_to_be_a_hero.html">How to be a hero?</a></li>
+					<li><a href="why_do_you_have_depression.html">Why do you have depression?</a></li>
+					<li><a href="why_bad_clowns_kill_people.html">Why bad clowns kill people?</a></li>
+				</ul>
+			</div>
+			</div>
+			<div id="contact">
+				<div id="contact_wrap">
+					<img id="g_left" src="img/gear_left.png" alt="gear pic" />
+					<img id="g_right" src="img/gear_right.png" alt="gear pic" />
+				</div>
+				<div id="feedback">
+				<form>
+						<input id="name" type="text" value="" name="name" placeholder="Name" size="18" />
+					<input id="email" type="text" value="" name="email" placeholder="Email" size="18" />
+					<textarea id="message" cols="42" rows="5" placeholder="Message" name="message"  ></textarea>
+					<input id="submit" type="submit" value="Send Mail" />
+				</form>
+				</div>
+			</div>
+			<div class="foot">
+				<p>Copyright © piupiupiu. All Rights Reserved</p>
+				<p>design/codding by piupiupiu</p>
+				<p>logo by revenholm</p>
+			</div>
+		</div>
+
+	</body>
+</html>
